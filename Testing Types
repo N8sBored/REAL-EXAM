@@ -3,3 +3,16 @@ Black Box - CANT see code
 Unit Testing - Testing itself alone
 Integration Testing - Testing how it fits in
 Security - Security Testing
+
+Valid - Correct Data that SHOULD go there
+Invalid - Incorrect Data that SHOULDNT go there (however it is of the same data type - string, int, etc.)
+Erroneous - Completely incorrect data of the wrong data type (e.g: "Name: ';';12;12';2'3")
+Extreme - Just Inside/Outside possible bounds 
+
+E.G: Password - Max 12 Char - No ; Allowed
+
+Valid - Password1!
+Invalid - PasswordPassword (Too Long)
+Extreme Valid - Password123! (Exactly 12 character maximum)
+Extreme Invalid - Password1234! (1 character off of maximum)
+Erroneous - ;;;;;;; (Blatantly invalid and the wrong data type)
